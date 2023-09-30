@@ -1,21 +1,8 @@
 
-variable "main_region" {
-  type    = string
-  default = "us-east-1"
-}
-variable "access-key" {
-  type    = string
-  default = "AKIAVUNYQ7W54Q2PWHXO"
-}
-
-variable "secret-key" {
-  type    = string
-  default = "tt8ufqfeprJxZTKAj883sVJ+B0J9IO1/i/welPaz"
-}
 provider "aws" {
   region     = var.main_region
-  access_key = var.access-key
-  secret_key = var.secret-key
+  access_key = var.access_key
+  secret_key = var.secret_key
 }
 
 module "vpc" {
