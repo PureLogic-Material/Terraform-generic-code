@@ -14,8 +14,8 @@ variable "main_region" {
 # }
 provider "aws" {
   region     = var.main_region
-  access_key = var.access-key
-  secret_key = var.secret-key
+  # access_key = var.access-key
+  # secret_key = var.secret-key
 }
 
 module "vpc" {
